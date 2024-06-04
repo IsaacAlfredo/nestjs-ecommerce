@@ -6,7 +6,7 @@ import { ProductSchema } from './schemas/product.schema';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: 'Product', schema: ProductSchema }]), // 3. Setup the mongoose module to use the product schema
+    MongooseModule.forFeature([{ name: 'Product', schema: ProductSchema }]),
   ],
   providers: [ProductService],
   controllers: [ProductController],
