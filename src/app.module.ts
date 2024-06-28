@@ -9,7 +9,9 @@ import { CartModule } from './cart/cart.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://127.0.0.1:27017/store'),
+    MongooseModule.forRoot(
+      'mongodb+srv://isaacfreitas23:iR6qNRjURQN8EfzT@nestjs-ecommerce.g3eysrj.mongodb.net/?retryWrites=true&w=majority&appName=nestjs-ecommerce',
+    ),
     ProductModule,
     UserModule,
     AuthModule,
